@@ -2,7 +2,8 @@ import {useEffect, useCallback} from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 export default function Pokemon(props){
-  const { pokemons, setPokemons, setSelectedPokemon } = props
+  const { pokemons, setPokemons, setSelectedPokemon } = props;
+
   useEffect(() => {
     if(pokemons.length === 0){
       axios.get('https://pokeapi.co/api/v2/pokemon')
@@ -17,6 +18,7 @@ export default function Pokemon(props){
   const handlePokemonChange = useCallback((e) => {
     setSelectedPokemon(e.target.value)
   },[setSelectedPokemon])
+  
   return(
     <>
       <select onChange = {handlePokemonChange}>

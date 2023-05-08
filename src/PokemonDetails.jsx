@@ -13,7 +13,7 @@ if(selectedPokemon){
 
 return(
   <>
-  {<h3>{selectedPokemon} abilities:</h3>}
+  <h3>{selectedPokemon} abilities:</h3>
   {abilities?.map((ability, index) => <div key={ability}>{index + 1}.{ability}</div>)}
   </>
 )

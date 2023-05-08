@@ -6,6 +6,7 @@ export default function App() {
   const [pokemons, setPokemons] = useState([]);
   const [selectedPokemon, setSelectedPokemon] = useState("");
   const [abilities, setAbilities] = useState([]);
+  
   return (
     <div className="App">
       <Pokemon 
