@@ -11,3 +11,4 @@ Problem 1: Display a list of pokemon in a dropdown from "https://pokeapi.co/api/
 
 This is an approach where the stateful function act as a master and holds entire state and controls the slave or stateless functions to render the required results.
 
+Code Sandbox link for uick access: https://codesandbox.io/s/pokemon-react-master-slave-pattern-neszw3
